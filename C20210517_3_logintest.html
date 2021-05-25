@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #title{
+            background-color: ivory;
+            border: solid 3px;
+            padding: 20px 20px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            color: goldenrod;
+            text-align: center;
+        }
+        input[type ="text"],[type = "password"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin:  8px, 0;
+            border: none;
+            background-color: orange;
+            color: black;
+            text-align: center;
+        }
+        
+        .button{
+            background-color: lemonchiffon;
+            color: saddlebrown;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin:  4px, 2;
+            text-align: center;
+            cursor:  pointer;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="">
+    <h2 id="title">로그인</h2>
+    <table>
+        <tr>
+            <th>아이디:</th>
+            <td><input class="text" type="text" placeholder="아이디를 입력해주세요"></td><br>            
+        </tr>
+        <tr>
+            <th>비밀번호</th>
+            <td><input class="text" type="password" placeholder="비밀번호를 입력해주세요"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input class="button" type="submit" value="로그인">
+                <input class="button" type="reset" value="취소">
+                <input class="button" type="submit" value="회원가입">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

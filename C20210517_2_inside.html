@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 내부 스타일</title>
+    <!-- 대상을 지정 :  -->
+    <style>
+        /* 전체 선택자 */
+        *{
+            background-color:  palegoldenrod
+        }
+        /* 태그 선택자 */
+        h2 {
+            background-color: teal;
+            border: solid 3px pink;
+            padding: 40px 20px ;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            color: midnightblue;
+            background-image: url("../image/smudi.jpg") ;
+            text-align: center;
+        }
+        p{
+            background-color: palegreen;
+            border: solid 5px seagreen;
+            padding: 10px;
+            color: green;
+        }
+        /* 클래스 선택자 : 여러개를 그룹으로 묶어서 적용 */
+        .first{
+            background-color: mintcream;
+            font-size: 18px;
+            font: bold;
+            font-family: "Times New Roman", Times, serif;
+        }
+        /* 아이디 선택자:한개만 적용 */
+        #secend{
+            background-color:  paleturquoise;
+            color: darkslategray;
+        }
+        /* 인라인스타일-아이디선택자-클래스선택자-태그선택자-소스의순서 */
+    </style>
+</head>
+<body>
+    <h2>내부 스타일</h2>
+    <p class="first">
+        종속형 시트 또는 캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)는 
+        마크업 언어가 실제 표시되는 방법을 기술하는 언어로 
+        HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. 
+        W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높다.</p>
+
+    <p class="first">마크업 언어(ex: HTML)가 웹사이트의 몸체를 담당한다면 
+        CSS는 옷과 액세서리처럼 꾸미는 역할을 담당한다고 할 수 있다. 
+        즉, HTML 구조는 그대로 두고 CSS 파일만 변경해도 전혀 다른 웹사이트처럼 
+        꾸밀 수 있다.</p>    
+    
+    <p id="secend"> 현재 개발 중인 CSS3의 경우 그림자 효과, 그라데이션, 변형 등 
+        그래픽 편집 프로그램으로 제작한 이미지를 대체할 수 있는 기능이 추가되었다.
+         또한 다양한 애니메이션 기능이 추가되어 어도비 플래시를 어느 정도 대체하고 
+         있다.</p>
+</body>
+</html>
